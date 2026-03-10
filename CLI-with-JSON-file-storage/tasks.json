@@ -1,0 +1,14 @@
+[
+  {
+    "title": "take shower",
+    "status": "done"
+  },
+  {
+    "title": "get ready to office",
+    "status": "done"
+  },
+  {
+    "title": "build terrafrom code for mongo",
+    "status": "pending"
+  }
+]
