@@ -1,0 +1,32 @@
+[
+    {
+        "id": 2,
+        "title": "get ready",
+        "done": false
+    },
+    {
+        "id": 3,
+        "title": "read a book",
+        "done": true
+    },
+    {
+        "id": 4,
+        "title": "have lunch",
+        "done": true
+    },
+    {
+        "id": 4,
+        "title": "build a flask app",
+        "done": false
+    },
+    {
+        "id": 5,
+        "title": "have dinner",
+        "done": false
+    },
+    {
+        "id": 6,
+        "title": "meal prep",
+        "done": false
+    }
+]
