@@ -42,36 +42,37 @@ sudo service postgresql start
 sudo -i -u postgres
 createdb todo_db
 psql
-
+```
 
 Inside psql:
-
+```sql
 CREATE USER aswin WITH PASSWORD 'yourpassword';
 GRANT ALL PRIVILEGES ON DATABASE todo_db TO aswin;
 \q
+```
 
-
+```bash
 ###4. Create Tasks Table
 psql -U aswin -d todo_db -h localhost
-
+```
 
 Inside psql:
-
+```sql
 CREATE TABLE tasks (
     id SERIAL PRIMARY KEY,
     title TEXT NOT NULL,
     done BOOLEAN DEFAULT FALSE
 );
 \q
-
+```
 ##Flask App Configuration
 
 ###Install dependencies:
-
+```bash
 pip install flask psycopg2-binary
-
+```
 ### Update app.py connection details:
-
+```python
 def get_connection():
     return psycopg2.connect(
         dbname="todo_db",
@@ -80,7 +81,8 @@ def get_connection():
         host="localhost",
         port="5432"
     )
-
+```
 
 ## Running the App
+```bash
 python3 app.py
