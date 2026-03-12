@@ -16,14 +16,14 @@ Unlike the earlier JSON-based version, tasks are now stored in a proper relation
 ---
 
 ## Project Structure
-
+```text
 project/
 ├── app.py            # Main Flask application (PostgreSQL integrated)
 ├── templates/
 │   └── index.html    # HTML template with Jinja placeholders
 └── static/
 └── style.css     # Stylesheet for the app
-
+```
 
 
 ---
@@ -65,9 +65,9 @@ CREATE TABLE tasks (
 );
 \q
 ```
-##Flask App Configuration
+## Flask App Configuration
 
-###Install dependencies:
+### Install dependencies:
 ```bash
 pip install flask psycopg2-binary
 ```
