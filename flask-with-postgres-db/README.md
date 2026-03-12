@@ -35,10 +35,10 @@ project/
 sudo apt update
 sudo apt install postgresql postgresql-contrib -y
 
-### 2. Start PostgreSQL
+2. Start PostgreSQL
 sudo service postgresql start
 
-###3. Create Database and User
+3. Create Database and User
 sudo -i -u postgres
 createdb todo_db
 psql
@@ -52,7 +52,7 @@ GRANT ALL PRIVILEGES ON DATABASE todo_db TO aswin;
 ```
 
 ```bash
-###4. Create Tasks Table
+4. Create Tasks Table
 psql -U aswin -d todo_db -h localhost
 ```
 
